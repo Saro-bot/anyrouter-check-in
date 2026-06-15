@@ -1,7 +1,7 @@
-name: AnyRouter 签到 - Account1
+name: AnyRouter 签到 - Account2
 on:
   schedule:
-    - cron: '0 2,14 * * *'
+    - cron: '0 3,15 * * *'
   workflow_dispatch:
     inputs:
       debug:
@@ -13,7 +13,7 @@ on:
 jobs:
   checkin:
     runs-on: ubuntu-latest
-    environment: production-1
+    environment: production-2
     env:
       PYTHONIOENCODING: utf-8
       PYTHONUNBUFFERED: 1
